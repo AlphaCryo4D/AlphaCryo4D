@@ -20,9 +20,9 @@ Programs and scripts in AlphaCryo4D v0.1beta are briefly described in the follow
 
 Bootstrap Directory: 3D bootstrap with M-fold data augmentation and particle shuffling
 1. randsf.py: split the star file of all particles into several sub-datasets.
-2. bootstrap.py: augment each sub-dataset to M times.
+2. bootstrap.py: augment each sub-dataset M times by particle shuffling.
 3. link.sh: link the star and mrc files of 3D bootstrapping into two folders.
-4. fit.sh: align all 3D density maps to a reference map (sometimes can be omitted).
+4. fit.sh: align all 3D density maps to a reference map to bring all volumes to the same frame of reference.
 5. bigdata.py: prepare the 3D volume dataset after bootstrapping.
 
 DeepFeature Directory: extract 3D feature by 3D deep residual autoencoder
