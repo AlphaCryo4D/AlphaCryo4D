@@ -9,7 +9,7 @@ from scipy import integrate
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--landscape', '-l', type=str, default='output.npy',
-                        help='free energy landscape mapping by t-sne')
+                        help='free energy landscape points mapping by t-sne')
     parser.add_argument('--number', '-n', type=str, default='num.txt',
                         help='particle number file')
     parser.add_argument('--range', '-r', type=float, default=100.0,

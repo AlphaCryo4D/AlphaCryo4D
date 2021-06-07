@@ -18,11 +18,15 @@ if __name__=='__main__':
                         help='output of t-SNE')
     parser.add_argument('--seed', '-s', type=int, default=0,
                         help='random seed')
+    parser.add_argument('--perplexity', '-p', type=float, default=30.0,
+                        help='perplexity of t-SNE')
+    parser.add_argument('--niter', '-n', type=int, default=1000,
+                        help='maximum number of iterations in t-SNE')
     args = parser.parse_args()
 
     np.random.seed(args.seed)
     data_t = np.load(args.input, mmap_mode='r')
-    tsne=TSNE(n_components=2)
+    tsne=TSNE(n_components=2, perplexity=args.perplexity, n_iter=args.niter)
     X=tsne.fit_transform(data_t)
     np.save(args.output, X) # output of t-sne
 
