@@ -1,4 +1,4 @@
-AlphaCryo4D v0.1.0c Prototype System
+AlphaCryo4D v0.1.0c Development Version
 
 ==================================================
 
