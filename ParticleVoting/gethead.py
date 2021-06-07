@@ -4,9 +4,9 @@ import argparse
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--star', '-s', type=str, default="u123_p1c1.star",
-                        help='star file')
+                        help='input starfile')
     parser.add_argument('--head', '-he', type=str, default="head.star",
-                        help='head of star file')
+                        help='head of the starfile')
     args = parser.parse_args()
 
     star = args.star
