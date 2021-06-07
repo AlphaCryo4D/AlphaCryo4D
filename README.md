@@ -1,4 +1,4 @@
-AlphaCryo4D v0.1beta Prototype System
+AlphaCryo4D v0.1.0c Prototype System
 
 AlphaCryo4D is an open-source free software released under GNU General Public LICENSE that implements 3D classification of single-particle cryo-EM data using deep manifold learning and novel energy-based particle voting methods (originally proposed in the following bioRxiv preprint by the Mao laboratory). AlphaCryo4D v0.1beta is currently a prototype, NOT a stable released version, which is still under development. The authors wish to adopt the community development model to advance the future version of this open-source software with a more user-friendly interface. Users are free to use and modify the source code, providing their compliance with the GPL and that any publication making use of this software shall cite the following reference or its formally published form:
 
