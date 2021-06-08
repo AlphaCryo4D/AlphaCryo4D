@@ -21,6 +21,8 @@ pip install -r EnvPip.txt
 
 ==================================================
 
+Documentations:
+
 Programs and scripts are described in Docs/documentation_alphacryo4d.pdf. An example tutorial is provied in Docs/tutorial_alphacryo4d.pdf. Please do not hesitate to reach our team should you encounter issues in using this system.
 
 ==================================================
