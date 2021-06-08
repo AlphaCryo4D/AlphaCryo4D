@@ -26,8 +26,7 @@ Programs and scripts are described in Docs/documentation_alphacryo4d.pdf. An exa
 ==================================================
 
 The AlphaCryo4D Development Team:
-Youdong Mao (PI), Zhaolong Wu, Shuwen Zhang, Yinping Ma, Wei Li Wang, Deyao Yin 
-June 2021.
+Youdong Mao (PI), Zhaolong Wu, Shuwen Zhang, Yinping Ma, Wei Li Wang, Deyao Yin. (June 2021).
 
 ==================================================
 
