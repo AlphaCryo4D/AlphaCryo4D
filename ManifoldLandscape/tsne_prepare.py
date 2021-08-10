@@ -11,15 +11,20 @@ if __name__=='__main__':
                         help='raw data')
     parser.add_argument('--feature', '-f', type=str, default='result/feature.npy',
                         help='deep feature')
+    parser.add_argument('--std', '-s', type=bool, default=True,
+                        help='if standardize the deep feature')
     args = parser.parse_args()
 
     starttime=time.time()
 
     data_d = np.load(args.feature, mmap_mode='r')
-    data_d = data_d.reshape((-1, data_d.shape[0]))
-    scaler_d = StandardScaler().fit(data_d)
-    data_d = scaler_d.transform(data_d)
-    data_d = data_d.reshape((data_d.shape[-1],-1))
+    if args.std:
+        data_d = data_d.reshape((-1, data_d.shape[0]))
+        scaler_d = StandardScaler().fit(data_d)
+        data_d = scaler_d.transform(data_d)
+        data_d = data_d.reshape((data_d.shape[-1],-1))
+    else:
+        data_d = data_d.reshape((data_d.shape[0],-1))
 
     data_r = np.load(args.data, mmap_mode='r')
     data_r = data_r.reshape((data_r.shape[0],-1))

@@ -20,8 +20,6 @@ def pre():
     # Step2: normalize
     print('data normalizing...')
     for i in range(x_train.shape[0]):
-        x_train[i] -= x_train[i].mean()
-        x_train[i] /= x_train[i].std()
         x_train[i] = (x_train[i]-x_train.min())/(x_train.max()-x_train.min())
 
     np.save('data_dl.npy', x_train)
