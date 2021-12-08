@@ -1,4 +1,4 @@
-AlphaCryo4D v0.1.0c Development Version
+AlphaCryo4D v0.1.0d Development Version
 
 ==================================================
 
@@ -12,13 +12,17 @@ Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Congcong Liu, Chang-Cheng Yin,
 
 Installation:
 1. Create the conda environment:
+
 conda create -n AlphaCryo4D python=3.7.1
 
 2. Activate the environment:
+
 source activate AlphaCryo4D
 
 3. Install the dependencies:
+
 conda install --yes --file EnvConda.txt
+
 pip install -r EnvPip.txt
 
 ==================================================
