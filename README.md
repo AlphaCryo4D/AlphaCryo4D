@@ -8,20 +8,37 @@ Reference:
 
 Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Congcong Liu, Chang-Cheng Yin, Youdong Mao. Visualizing conformational space of functional biomolecular complexes by deep manifold learning. bioRxiv preprint doi: https://doi.org/10.1101/2021.08.09.455739.
 
+References of potentially used software:
+
+EMAN2:
+Tang, G., Peng, L., Baldwin, P. R., Mann, D. S., Jiang, W., Rees, I., & Ludtke, S. J. (2007). EMAN2: an extensible image processing suite for electron microscopy. J Struct Biol, 157(1), 38-46. doi:10.1016/j.jsb.2006.05.009
+
+RELION:
+Scheres, S. H. (2012). RELION: implementation of a Bayesian approach to cryo-EM structure determination. J Struct Biol, 180(3), 519-530. doi:10.1016/j.jsb.2012.09.006
+
 ==================================================
 
 Installation:
-1. Create the conda environment:
+
+It is recommended to install EMAN2 and RELION before using AlphaCryo4D according to the websites https://github.com/cryoem/eman2 and https://github.com/3dem/relion respectively.
+
+1.  Download the source code: 
+
+git clone https://github.com/AlphaCryo4D/AlphaCryo4D.git
+
+cd AlphaCryo4D/
+
+2.  Create the conda environment: 
 
 conda create -n AlphaCryo4D python=3.7.1
 
-2. Activate the environment:
+3.  Activate the environment: 
 
 source activate AlphaCryo4D
 
-3. Install the dependencies:
+4.  Install the dependencies: 
 
-conda install --yes --file EnvConda.txt
+conda install --yes --file EnvConda.txt 
 
 pip install -r EnvPip.txt
 
@@ -29,7 +46,7 @@ pip install -r EnvPip.txt
 
 Documentation:
 
-Programs and scripts are described in Docs/documentation_alphacryo4d.pdf. An example tutorial is provied in Docs/tutorial_alphacryo4d.pdf. Please do not hesitate to reach our team should you encounter issues in using this system.
+Programs and scripts are described in Docs/documentation_alphacryo4d.pdf. An example tutorial is provied in Docs/tutorial_alphacryo4d.pdf. The procedures are tested on the operating system of CentOS Linux release 7.6.1810. Please do not hesitate to reach our team should you encounter issues in using this system.
 
 ==================================================
 
