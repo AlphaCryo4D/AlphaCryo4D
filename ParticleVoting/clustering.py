@@ -18,7 +18,8 @@ def main():
     c = np.load(args.centers)
 
     for n in range(c.shape[0]):
-        os.mkdir('c' + str(n+1))
+        if not os.path.exists('c' + str(n+1)):
+            os.mkdir('c' + str(n+1))
 
     for i in range(x.shape[0]):
         print('item:' + str(i+1))
