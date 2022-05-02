@@ -14,6 +14,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--folder', '-f', type=str, default='./maps_aligned/',
                         help='folder of maps')
+    parser.add_argument('--std', '-s', type=bool, default=True,
+                        help='if standardize the maps')
     args = parser.parse_args()
     path = args.folder # the folder of maps
 
@@ -32,9 +34,10 @@ if __name__ == '__main__':
             nmrc = mrc.data
             fp3d[n] = nmrc
             nmrc=np.reshape(nmrc,(-1,1))
-            scaler = StandardScaler().fit(nmrc) # normalization
-            nmrc_norm = np.ravel(scaler.transform(nmrc))
-            fp[n] = nmrc_norm
+            if args.std:
+                scaler = StandardScaler().fit(nmrc) # normalization
+                nmrc_norm = scaler.transform(nmrc)
+            fp[n] = np.ravel(nmrc_norm)
             with open(pwd + '/data.log', mode='a+') as f:
                 f.write('%d %s\n' % (n+1, file))
 
