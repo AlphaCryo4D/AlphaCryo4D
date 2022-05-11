@@ -1,4 +1,4 @@
-AlphaCryo4D v0.1.0e Development Version
+AlphaCryo4D v0.1.1 Development Version
 
 ==================================================
 
@@ -56,4 +56,4 @@ Youdong Mao (PI), Zhaolong Wu, Shuwen Zhang, Yinping Ma, Wei Li Wang, Deyao Yin.
 
 ==================================================
 
-Copyright ©2021 | The AlphaCryo4D Development Team
+Copyright ©2022 | The AlphaCryo4D Development Team
