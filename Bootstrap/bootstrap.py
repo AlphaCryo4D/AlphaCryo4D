@@ -13,10 +13,14 @@ if __name__ == '__main__':
                         help='starfile of a batch of dataset')
     parser.add_argument('--fold', '-f', type=int, default=3,
                         help='fold of data augmentation')
+    parser.add_argument('--relion', '-r', type=int, default=2,
+                        help='relion')
     args = parser.parse_args()
 
     filename=args.star
     fold=args.fold+1
+
+    lim=2
 
     x=0 # lines of head
     r=0 # remaining lines in starfile
@@ -24,11 +28,24 @@ if __name__ == '__main__':
     # compute total particle number
     count=0
     for count, line in enumerate(open(filename, 'r')):
-        if len(line.split(' '))<=3 and head:
-            x+=1
-        else:
-            head=False
-        if len(line.split(' ')) <= 3:
+        if args.relion >= 3:
+            if lim==2 and len(line.split(' ')) > 3:
+                lim-=1
+            if lim==1 and len(line.split(' ')) <= 3:
+                lim-=1
+            if lim==0 and len(line.split(' ')) > 3:
+                head=False
+
+            if head:
+                x+=1
+                r+=1
+        elif args.relion == 2:
+            if lim==2 and len(line.split(' ')) > 3:
+                head=False
+            if head:
+                x+=1
+                r+=1
+        if not head and len(line.split(' ')) <= 3:
             r+=1
         count += 1
     num=int((count-r)/fold)
