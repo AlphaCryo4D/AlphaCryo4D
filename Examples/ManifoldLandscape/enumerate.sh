@@ -1,6 +1,6 @@
 #!/bin/bash
 
-datafile='../Bootstrap/data.log'
+datafile='../Resample/data.log'
 numberfile='num.txt'
 
 while read line;do
@@ -8,6 +8,6 @@ u=`echo $line | awk -v head="u" -v tail="_b" '{print substr($0, index($0,head)+l
 b=`echo $line | awk -v head="b" -v tail="_c" '{print substr($0, index($0,head)+length(head),index($0,tail)-index($0,head)-length(head))}'`
 c=`echo $line | awk -v head="c" -v tail="_a" '{print substr($0, index($0,head)+length(head),index($0,tail)-index($0,head)-length(head))}'`
 
-l=$[`awk '{if(NF>3) print $0}' ../Bootstrap/stars/u${u}_b${b}_c${c}.star | wc -l`]
+l=$[`awk '{if(NF>3) print $0}' ../Resample/stars/u${u}_b${b}_c${c}.star | wc -l`]
 echo $l >> $numberfile
 done < $datafile
