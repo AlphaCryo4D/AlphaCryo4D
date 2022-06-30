@@ -71,7 +71,7 @@ if __name__ == '__main__':
     DIR = sys.path[0]
     CUR = os.getcwd()
 
-    x1 = 'python ' + str(DIR) + '/Bootstrap/bigdata.py --folder ' + str(args.folder) + ' --std ' + str(args.std)
+    x1 = 'python ' + str(DIR) + '/Resample/bigdata.py --folder ' + str(args.folder) + ' --std ' + str(args.std)
     os.system(x1)
     x71 = 'cp ' + str(DIR) + '/ManifoldLandscape/enumerate.sh .'
     os.system(x71)
