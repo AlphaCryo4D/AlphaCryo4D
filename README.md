@@ -6,15 +6,15 @@ AlphaCryo4D is an open-source free software released under GNU General Public LI
 
 Reference:
 
-Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Congcong Liu, Chang-Cheng Yin, Youdong Mao. Visualizing conformational space of functional biomolecular complexes by deep manifold learning. bioRxiv preprint doi: https://doi.org/10.1101/2021.08.09.455739.
+Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Youdong Mao. Visualizing conformational space of functional biomolecular complexes by deep manifold learning. Int. J. Mol. Sci. 23(16), 8872 (2022). https://doi.org/10.3390/ijms23168872
 
 References of potentially used software:
 
 EMAN2:
-Tang, G., Peng, L., Baldwin, P. R., Mann, D. S., Jiang, W., Rees, I., & Ludtke, S. J. (2007). EMAN2: an extensible image processing suite for electron microscopy. J Struct Biol, 157(1), 38-46. doi:10.1016/j.jsb.2006.05.009
+Tang, G., Peng, L., Baldwin, P. R., Mann, D. S., Jiang, W., Rees, I., & Ludtke, S. J. EMAN2: an extensible image processing suite for electron microscopy. J Struct Biol, 157(1), 38-46 (2007). doi:10.1016/j.jsb.2006.05.009
 
 RELION:
-Scheres, S. H. (2012). RELION: implementation of a Bayesian approach to cryo-EM structure determination. J Struct Biol, 180(3), 519-530. doi:10.1016/j.jsb.2012.09.006
+Scheres, S. H. RELION: implementation of a Bayesian approach to cryo-EM structure determination. J Struct Biol, 180(3), 519-530 (2012). doi:10.1016/j.jsb.2012.09.006
 
 ==================================================
 
