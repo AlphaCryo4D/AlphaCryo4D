@@ -6,7 +6,7 @@ AlphaCryo4D is an open-source free software released under GNU General Public LI
 
 Reference:
 
-Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Congcong Liu, Chang-Cheng Yin, Youdong Mao. Visualizing conformational space of functional biomolecular complexes by deep manifold learning. bioRxiv preprint doi: https://doi.org/10.1101/2021.08.09.455739.
+Zhaolong Wu, Enbo Chen, Shuwen Zhang, Yinping Ma, Youdong Mao. Visualizing conformational space of functional biomolecular complexes by deep manifold learning. Int. J. Mol. Sci. 23(16), 8872 (2022). https://doi.org/10.3390/ijms23168872
 
 References of potentially used software:
 
